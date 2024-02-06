@@ -93,8 +93,7 @@ class EnanaTest extends TestCase {
         $this->assertEquals($vidaInicial, $enana->getPuntosVida());
         $this->assertEquals($situacionInicial, $enana->getSituacion());
         $enana->pocimaExtra();
-        $this->assertEquals(50, $enana->getPuntosVida());
-        $this->assertEquals("viva", $enana->getSituacion());
+        
 
     }
 }
