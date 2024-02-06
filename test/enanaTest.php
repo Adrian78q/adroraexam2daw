@@ -90,10 +90,10 @@ class EnanaTest extends TestCase {
         $enana->setSituacion("limbo");
         $vidaInicial = $enana->getPuntosVida();
         $situacionInicial = $enana->getSituacion();
-        $this->assertEquals($vidaInicial, $enana->getPuntosVida());
-        $this->assertEquals($situacionInicial, $enana->getSituacion());
-        $enana->pocimaExtra();
         
+        $enana->pocimaExtra();
+        $this->assertEquals(50, $enana->getPuntosVida());
+        $this->assertEquals("viva", $enana->getSituacion());
 
     }
 }
