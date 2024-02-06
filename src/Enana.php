@@ -15,7 +15,13 @@ class Enana
         $this->puntosVida=$a2;
         $this->situacion="muerta";
 
-        
+        if ($a2 > 0) {
+            $this->situacion = "viva";
+        } elseif ($a2 < 0) {
+            $this->situacion = "muerta";
+        } else {
+            $this->situacion = "limbo";
+        }
     }
 
     public function heridaLeve(){
