@@ -14,6 +14,7 @@ class Enana
         $this->nombre=$a1;
         $this->puntosVida=$a2;
         $this->situacion="muerta";
+        
     }
 
     public function heridaLeve(){
